@@ -1,12 +1,9 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "Reproducible Research Assignment: Course Project 1"
 output: 
   html_document:
     keep_md: true
 ---
-Reproducible Research Assignment: Course Project 1
-==================================================
-
 ## Loading and preprocessing the data
 
 1. Load the data
