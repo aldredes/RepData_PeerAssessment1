@@ -13,6 +13,7 @@ colors <- c("#F8766D", "#00BFC4") # traced from ggplot2
 activity <- read.csv(unz("activity.zip","activity.csv"))
 ```
 
+
 ## What is mean total number of steps taken per day?
 
 1. Calculate the total number of steps taken per day
@@ -64,6 +65,7 @@ legend("topright", c("Mean", "Median"), col = c(colors[1], colors[2]),
 ![](figure/histogram_total_steps_per_day_with_missing_values-1.png)<!-- -->
 
 The mean total number of steps taken per day is __9,354.23__, while the median total number of steps taken per day is __10,395__.
+
 
 ## What is the average daily activity pattern?
 
@@ -172,6 +174,7 @@ legend("topright", c("Mean", "Median"), col = c(colors[1], colors[2]),
 
 After the missing values were imputed, the new mean total number of steps taken per day is __10,766.19__, while the new median total number of steps taken per day is __10,766.19__.  Both values increased significantly, although they have the same value after filling in missing values with the mean value with the respective interval.
 
+
 ## Are there differences in activity patterns between weekdays and weekends?
 
 1. Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
@@ -205,3 +208,5 @@ ggplot(meanStepsPerInterval, aes(interval, steps, col = weekPart)) +
 ```
 
 ![](figure/time_series_plot_interval_vs_mean_steps_with_day_levels-1.png)<!-- -->
+
+
