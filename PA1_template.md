@@ -63,7 +63,7 @@ legend("topright", c("Mean", "Median"), col = c(colors[1], colors[2]),
 
 ![](figure/histogram_total_steps_per_day_with_missing_values-1.png)<!-- -->
 
-The mean total number of steps taken per day is __9,354.23__, while the median total number of steps taken per day is __10,395__.  
+The mean total number of steps taken per day is __9,354.23__, while the median total number of steps taken per day is __10,395__.
 
 ## What is the average daily activity pattern?
 
@@ -90,7 +90,7 @@ ggplot(meanStepsPerInterval, aes(interval, meanSteps)) +
 
 ![](figure/average_daily_activity_pattern-1.png)<!-- -->
 
-On average across all the days in the dataset, interval __835__ contains the maximum number of steps.  
+On average across all the days in the dataset, interval __835__ contains the maximum number of steps.
 
 ## Imputing missing values
 
@@ -170,7 +170,7 @@ legend("topright", c("Mean", "Median"), col = c(colors[1], colors[2]),
 
 ![](figure/new_histogram_total_steps_per_day-1.png)<!-- -->
 
-After the missing values were imputed, the new mean total number of steps taken per day is __10,766.19__, while the new median total number of steps taken per day is __10,766.19__.  Both values increased significantly, although they have the same value after filling in missing values with the mean value with the respective interval.  
+After the missing values were imputed, the new mean total number of steps taken per day is __10,766.19__, while the new median total number of steps taken per day is __10,766.19__.  Both values increased significantly, although they have the same value after filling in missing values with the mean value with the respective interval.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
